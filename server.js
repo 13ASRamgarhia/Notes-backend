@@ -18,8 +18,8 @@ app.use(express.json())
 app.use(cors())
 
 try{
-    app.listen(PORT, () => {
-        console.log(`Connection established. Listening on PORT. ${PORT}`)
+    app.listen(() => {
+        console.log(`Connection established.`)
     })
 }
 catch(error){
